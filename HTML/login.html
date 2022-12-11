@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="icon" href="../Image/icon-1.png">
+    <title>Nangpi</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check"><label for="check" class="check-button"><i class="ri-menu-line"></i></label>
+        <a href="../index.html" class="logo"><i class="ri-store-3-fill"></i><span>Nangpi.</span></a>
+        <ul class="menu">
+            <li><a href="../index.html"><i class="ri-home-3-fill"></i><span>Home</span></a></li>
+            <li class="dropdown">
+                <a href="products.html" class="dropbtn"><i class="ri-menu-2-line"></i>Products</a>
+                <ul class="dropdown-menu">
+                    <li><a href="products.html#pinang"><i class="ri-arrow-right-s-fill"></i>Pinang</a></li>
+                    <li><a href="products.html#sirih"><i class="ri-arrow-right-s-fill"></i>Sirih</a></li>
+                    <li><a href="products.html#kapur"><i class="ri-arrow-right-s-fill"></i>Kapur</a></li>
+                </ul>
+            </li>
+            <li><a href="profile.html"><i class="ri-team-fill"></i>Profile</a></li>
+            <li><a href="sign.html"><i class="ri-user-3-fill"></i>Sign Up</a></li>
+            <li><a href="login.html" id="active"><i class="ri-rocket-2-fill"></i>Login</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="container">
+            <form name="logForm" id="login" onsubmit="return validate()">
+                <h2><i class="ri-rocket-2-fill"></i>Login</h2>
+                <div class="username">
+                    <label for="username">Email</label><br>
+                    <input type="email" name="username" id="username" placeholder="Enter Your Email">
+                </div>
+                <div class="passlog">
+                    <label for="passlog">Password</label><br>
+                    <input type="password" name="passlog" id="passlog" placeholder="Enter Your Password">
+                </div>
+                <div class="log-info">
+                    <input type="submit" value="Login">
+                    <p>Don't Have an Account Yet? <a href="sign.html">Sign Up</a> Now!</p>
+                </div>
+            </form>
+        </div>
+    </header>
+    <footer>
+        <div class="media-social">
+            <a href="https://wwww.instagram.com" target="_blank"><i class="ri-instagram-fill"></i></a>
+            <a href="https://wwww.facebook.com" target="_blank"><i class="ri-facebook-box-fill"></i></a>
+            <a href="https://wwww.twitter.com" target="_blank"><i class="ri-twitter-fill"></i></a>
+            <a href="https://wwww.youtube.com" target="_blank"><i class="ri-youtube-fill"></i></a>
+        </div>
+        <h4>Copyright &copy; | Dendra Hilal Ma'ruf - 22512011</h4>
+    </footer>
+    <script src="../Javascript/app.js"></script>
+</body>
+</html>

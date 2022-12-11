@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/sign.css">
+    <link rel="icon" href="../Image/icon-1.png">
+    <title>Nangpi</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check"><label for="check" class="check-button"><i class="ri-menu-line"></i></label>
+        <a href="../index.html" class="logo"><i class="ri-store-3-fill"></i><span>Nangpi.</span></a>
+        <ul class="menu">
+            <li><a href="../index.html"><i class="ri-home-3-fill"></i><span>Home</span></a></li>
+            <li class="dropdown">
+                <a href="products.html" class="dropbtn"><i class="ri-menu-2-line"></i>Products</a>
+                <ul class="dropdown-menu">
+                    <li><a href="products.html#pinang"><i class="ri-arrow-right-s-fill"></i>Pinang</a></li>
+                    <li><a href="products.html#sirih"><i class="ri-arrow-right-s-fill"></i>Sirih</a></li>
+                    <li><a href="products.html#kapur"><i class="ri-arrow-right-s-fill"></i>Kapur</a></li>
+                </ul>
+            </li>
+            <li><a href="profile.html"><i class="ri-team-fill"></i>Profile</a></li>
+            <li><a href="sign.html" id="active"><i class="ri-user-3-fill"></i>Sign Up</a></li>
+            <li><a href="login.html"><i class="ri-rocket-2-fill"></i>Login</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="container">
+            <form name="signForm" id="form" onsubmit="return signAccount()">
+                <h2><i class="ri-user-3-fill"></i>Sign Up</h2>
+                <div class="span">
+                    <label for="name" class="name">Full Name</label><br>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Full Name">
+                </div>
+                <div class="span">
+                    <label for="email" class="up">Email</label><br>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                </div>
+                <div>
+                    <label for="gender" class="gender">Gender</label><br>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male" class="male">Male</label><br>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female" class="female">Female</label>
+                </div>
+                <div>
+                    <label for="city" class="up">City</label><br>
+                    <select name="city" id="city">
+                        <option>Timika</option>
+                        <option>Merauke</option>
+                        <option>Jayapura</option>
+                    </select>
+                </div>
+                <div class="span">
+                    <label for="password" class="password">Password</label><br>
+                    <input type="password" name="password" id="password" placeholder="Enter Your Password">
+                    <span id="pass"></span>
+                </div>
+                <div class="span">
+                    <label for="confirm" class="up">Confirm Password</label><br>
+                    <input type="password" name="confirm" id="confirm" placeholder="Confirm Your Password">
+                </div>
+                <div class="sign">
+                    <input type="submit" value="Sign Up">
+                </div>
+            </form>
+        </div>
+    </header>
+    <footer>
+        <div class="media-social">
+            <a href="https://wwww.instagram.com" target="_blank"><i class="ri-instagram-fill"></i></a>
+            <a href="https://wwww.facebook.com" target="_blank"><i class="ri-facebook-box-fill"></i></a>
+            <a href="https://wwww.twitter.com" target="_blank"><i class="ri-twitter-fill"></i></a>
+            <a href="https://wwww.youtube.com" target="_blank"><i class="ri-youtube-fill"></i></a>
+        </div>
+        <h4>Copyright &copy; | Dendra Hilal Ma'ruf - 22512011</h4>
+    </footer>
+    <script src="../Javascript/app.js"></script>
+</body>
+</html>
